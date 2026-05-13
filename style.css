@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+#logo{
+    width: 200px;
+}
+
+button{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 4px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header{
+    color: white;
+    background:url(resources/background.jpg)center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;  
+
+    display: flex;
+    flex-direction: column;
+}
+
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
