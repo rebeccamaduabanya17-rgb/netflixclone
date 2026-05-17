@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
+    font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: black;
 }
+
 #logo{
     width: 200px;
 }
@@ -14,10 +17,16 @@ button{
     border-radius: 4px;
     cursor: pointer;
 }
-
-header{
+button:hover{  /* adds a hover effect to the button */
+    background-color: #f40612;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+header > * {
     color: white;
-    background: linear-gradient(rgba(8,0,8, 1) ,rgba(0,8,0,.5), rgba(0,8,8, 1)),url(resources/background.jpg)center no-repeat;
+}
+header{
+    background: linear-gradient(rgba(8,0,8, 1) ,rgba(0,8,0,.5), rgba(0,8,8, 1)), url("resources/background.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
     height: 90vh;  
@@ -27,16 +36,208 @@ header{
     align-items: center;
 }
 
-header section{
+header > section:first-child{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 50vw;
+    align-items: center;
+    width: 90%; /*removed kagos 50vw because it was too small for me*/
+    padding: 20px 0;
 }
 
 h2{
-    margin-top: 50vh;
+    margin-top: 150px;
+    
 }
 .CTA{
     width:unset;
+}
+h3{
+    color: white;
+}
+.tv-container {
+    position: relative;
+    max-width: 600px;
+    margin:0 auto; /* centers the container horizontally */
+}
+
+.tv-container img {
+    width: 100%;
+    display: block;
+}
+
+.tv-container video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 74%;
+    height: 54%;
+}
+.curve{
+    height: 8px;
+    width: 100%;
+
+    background: linear-gradient(90deg,#ff0033 0%,#ff4d6d 40%,#8b00ff 100%);
+
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+
+    box-shadow: 0 0 20px rgba(255,0,80,0.6);
+}
+div span{
+    -webkit-text-stroke: 1px white;
+    font-weight: 500;
+    font-size: 100px;
+    position: relative;
+    right: 25px;
+}
+
+div.card{
+    width: 214px;
+    height: 300px;
+
+    display:flex;
+    align-items: flex-end;
+
+    flex-shrink: 0; /* rememberprevents cards from squashing */
+    border-radius: 10px;
+
+}
+#show1{
+    background-image: url("resources/image1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show2{
+    background-image: url("resources/image2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show3{
+    background-image: url("resources/image3.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show4{
+    background-image: url("resources/image4.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show5{
+    background-image: url("resources/image5.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show6{
+    background-image: url("resources/image6.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show7{
+    background-image: url("resources/image7.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show8{
+    background-image: url("resources/image8.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show9{
+    background-image: url("resources/image9.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#show10{
+    background-image: url("resources/image10.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    padding:0 10vw;
+}
+#trending-now{
+    display: flex;
+    gap: 20px;/*kago used 100px but it was too much for me cause i used 10 images*/
+    overflow-x : auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+#trending-now::-webkit-scrollbar{
+    display: none;
+}
+
+#more-reasons{
+    margin-bottom: 100px;
+    display: flex;
+    gap: 25px;
+}
+
+.reason-card{
+    width: 340px;
+    height: 270px;
+    background: linear-gradient(135deg, #1b1f3a 0%, #2a0f1f 100%);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    padding: 10px;
+
+    overflow: hidden; /* hides the overflowing part of the image */
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    align-self: flex-end; /* moves the icon to the bottom right corner */
+}
+
+#FAQ{
+    color: white;
+    padding: 30px 0;
+}
+
+details{
+    background: #2d2d2d;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;   
+
+}
+details p{
+    border-top: 1px solid black; 
+}
+footer{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}   
+#links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: underline;
+    color: #b3b3b3;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+#links li:hover{
+    color: white;
+}
+ul {
+    list-style: none;
 }
