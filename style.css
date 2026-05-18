@@ -58,6 +58,7 @@ h3{
     position: relative;
     max-width: 600px;
     margin:0 auto; /* centers the container horizontally */
+    overflow: hidden; /* hides the overflowing part of the video */
 }
 
 .tv-container img {
@@ -71,6 +72,8 @@ h3{
     left: 13%;
     width: 74%;
     height: 54%;
+    object-fit: cover;
+    z-index: 1;
 }
 .curve{
     height: 8px;
