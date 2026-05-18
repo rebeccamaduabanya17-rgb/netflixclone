@@ -69,9 +69,9 @@ h3{
 div span{
     -webkit-text-stroke: 1px white;
     font-weight: 500;
-    font-size: 100px;
+    font-size: 70px; /*decreased kagos 100px because it was too big for me*/
     position: relative;
-    right: 25px;
+    left: 5px;
 }
 
 div.card{
