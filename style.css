@@ -45,7 +45,7 @@ header > section:first-child{
 }
 
 h2{
-    margin-top: 150px;
+    margin-top: 60px;
     
 }
 .CTA{
@@ -53,11 +53,12 @@ h2{
 }
 h3{
     color: white;
+    margin: 5px 0 10px;
 }
-
 .curve{
     height: 8px;
     width: 100%;
+    margin: 0;
 
     background: linear-gradient(90deg,#ff0033 0%,#ff4d6d 40%,#8b00ff 100%);
 
@@ -66,12 +67,17 @@ h3{
 
     box-shadow: 0 0 20px rgba(255,0,80,0.6);
 }
-div span{
-    -webkit-text-stroke: 1px white;
-    font-weight: 500;
-    font-size: 70px; /*decreased kagos 100px because it was too big for me*/
-    position: relative;
-    left: 5px;
+div.card span{
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: black;
+    -webkit-text-stroke: 2px white;
 }
 
 div.card{
@@ -83,6 +89,9 @@ div.card{
 
     flex-shrink: 0; /* rememberprevents cards from squashing */
     border-radius: 10px;
+
+    position: relative;
+    overflow: visible;
 
 }
 #show1{
@@ -147,13 +156,13 @@ div.card{
 }
 
 main{
-    padding:0 10vw;
+    padding:0 5vw;
 }
 #trending-now{
     display: flex;
     gap: 20px;/*kago used 100px but it was too much for me cause i used 10 images*/
     overflow-x : auto;
-    padding: 20px 0;
+    padding: 5px 0 20px;
     scroll-behavior: smooth;
 }
 
@@ -162,14 +171,15 @@ main{
 }
 .tv-container {
     position: relative;
-    max-width: 600px;
-    margin:0 auto; /* centers the container horizontally */
-    overflow: hidden; /* hides the overflowing part of the video */
+    width: 800px;
+    margin: 10px auto 0; /* centers the container horizontally */
 }
 
 .tv-container img {
     width: 100%;
     display: block;
+    position: relative;
+    z-index: 2; /* ensures the TV image is above the video */
 }
 
 .tv-container video {
