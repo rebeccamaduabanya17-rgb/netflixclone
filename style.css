@@ -54,27 +54,7 @@ h2{
 h3{
     color: white;
 }
-.tv-container {
-    position: relative;
-    max-width: 600px;
-    margin:0 auto; /* centers the container horizontally */
-    overflow: hidden; /* hides the overflowing part of the video */
-}
 
-.tv-container img {
-    width: 100%;
-    display: block;
-}
-
-.tv-container video {
-    position: absolute;
-    top: 20%;
-    left: 13%;
-    width: 74%;
-    height: 54%;
-    object-fit: cover;
-    z-index: 1;
-}
 .curve{
     height: 8px;
     width: 100%;
@@ -180,7 +160,27 @@ main{
 #trending-now::-webkit-scrollbar{
     display: none;
 }
+.tv-container {
+    position: relative;
+    max-width: 600px;
+    margin:0 auto; /* centers the container horizontally */
+    overflow: hidden; /* hides the overflowing part of the video */
+}
 
+.tv-container img {
+    width: 100%;
+    display: block;
+}
+
+.tv-container video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 74%;
+    height: 54%;
+    object-fit: cover;
+    z-index: 1;
+}
 #more-reasons{
     margin-bottom: 100px;
     display: flex;
